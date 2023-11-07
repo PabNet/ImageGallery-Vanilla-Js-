@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+<div id="termsOfUse" class="container">
+    <h1>Terms of Use</h1>
+    <div id="termsContent"></div>
+    <div class="button-container">
+        <button id="acceptButton">Accept</button>
+        <button id="rejectButton">Reject</button>
+    </div>
+</div>
+
+<div id="imageGalleryContainer" class="container">
+    <canvas id="imageCanvas" width="400" height="300"></canvas>
+    <div class="buttons-container">
+        <button id="prevButton" class="gallery-button">&#8249;</button>
+        <button id="nextButton" class="gallery-button">&#8250;</button>
+    </div>
+    <button id="saveButton" class="gallery-button">Save Image</button>
+</div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="closeModalButton" class="close">&times;</span>
+        <p>To continue using the application, please accept the Terms of Use.</p>
+    </div>
+</div>
+
+<script src="js/constants.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/handlers.js"></script>
+<script src="js/events.js"></script>
+
+</body>
+</html>
